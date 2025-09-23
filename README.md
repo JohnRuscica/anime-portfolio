@@ -8,7 +8,7 @@
 
 A modern, responsive portfolio website with a cyberpunk aesthetic and comprehensive multi-language support. Built with React, TypeScript, and Vite for optimal performance and developer experience.
 
-![Portfolio Preview](https://via.placeholder.com/800x400/0a0f1c/00d4ff?text=Anime+Portfolio+Preview)
+![Portfolio Preview]([https://[via.placeholder.com/800x400/0a0f1c/00d4ff?text=Anime+Portfolio+Preview](https://my-portfolio-delta-puce-7x6g3ll9h8.vercel.app/)](https://my-portfolio-delta-puce-7x6g3ll9h8.vercel.app/))
 
 ## ✨ Features
 
