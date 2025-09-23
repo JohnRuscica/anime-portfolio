@@ -1,6 +1,6 @@
 # 🌟 Anime Portfolio - Cyberpunk Edition
 
-**🚀 LIVE PORTFOLIO:** [View Live Site](https://my-portfolio-3ldutkj7d-john-ruscicas-projects.vercel.app)
+**🚀 LIVE PORTFOLIO:** [View Live Site]([https://my-portfolio-3ldutkj7d-john-ruscicas-projects.vercel.app](https://my-portfolio-delta-puce-7x6g3ll9h8.vercel.app/))
 
 **📂 GITHUB REPOSITORY:** [Source Code](https://github.com/JohnRuscica/anime-portfolio)
 
