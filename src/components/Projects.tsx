@@ -76,7 +76,7 @@ const Projects = () => {
       technologies: ["Node.js", "OAuth2", "Discord.js", "Cron"],
       githubUrl: "https://github.com/yourusername/anime-portfolio",
       liveUrl: "https://your-portfolio.vercel.app",
-      image: "/public/cute-chibi-anime-girl-3650hb74dgmqpp9e.gif",
+      image: "/dist/cute-chibi-anime-girl-3650hb74dgmqpp9e.gif",
       category: "web",
       status: "in-progress"
     },
