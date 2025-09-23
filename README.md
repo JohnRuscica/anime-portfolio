@@ -4,6 +4,8 @@
 
 **📂 GITHUB REPOSITORY:** [Source Code](https://github.com/JohnRuscica/anime-portfolio)
 
+<!-- Last updated: Auto-deploy test -->
+
 A modern, responsive portfolio website with a cyberpunk aesthetic and comprehensive multi-language support. Built with React, TypeScript, and Vite for optimal performance and developer experience.
 
 ![Portfolio Preview](https://via.placeholder.com/800x400/0a0f1c/00d4ff?text=Anime+Portfolio+Preview)
