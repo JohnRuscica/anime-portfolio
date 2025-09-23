@@ -1,6 +1,6 @@
 # 🌟 Anime Portfolio - Cyberpunk Edition
 
-**🚀 LIVE PORTFOLIO:** [View Live Site](https://my-portfolio-3ldutkj7d-john-ruscicas-projects.vercel.app)
+**🚀 LIVE PORTFOLIO:** [View Live Site](https://my-portfolio-delta-puce-7x6g3ll9h8.vercel.app/)
 
 **📂 GITHUB REPOSITORY:** [Source Code](https://github.com/JohnRuscica/anime-portfolio)
 
@@ -8,7 +8,7 @@
 
 A modern, responsive portfolio website with a cyberpunk aesthetic and comprehensive multi-language support. Built with React, TypeScript, and Vite for optimal performance and developer experience.
 
-![Portfolio Preview](https://via.placeholder.com/800x400/0a0f1c/00d4ff?text=Anime+Portfolio+Preview)
+![Portfolio Preview](https://my-portfolio-delta-puce-7x6g3ll9h8.vercel.app/preview-image.png)
 
 ## ✨ Features
 
@@ -69,7 +69,7 @@ A modern, responsive portfolio website with a cyberpunk aesthetic and comprehens
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/anime-portfolio.git
+   git clone https://github.com/JohnRuscica/anime-portfolio.git
    cd anime-portfolio
    ```
 
@@ -107,26 +107,26 @@ A modern, responsive portfolio website with a cyberpunk aesthetic and comprehens
 anime-portfolio/
 ├── public/                 # Static assets
 │   ├── bluecog.png        # Logo icon
-│   ├── nagi.png          # Hero character image
-│   └── *.gif             # Project preview images
+│   ├── nagi.png           # Hero character image
+│   └── *.gif              # Project preview images
 ├── src/
 │   ├── components/        # React components
-│   │   ├── Navbar.tsx    # Navigation with language selector
-│   │   ├── Hero.tsx      # Landing section with animations
-│   │   ├── About.tsx     # Personal story and skills
-│   │   ├── Projects.tsx  # Project showcase gallery
+│   │   ├── Navbar.tsx     # Navigation with language selector
+│   │   ├── Hero.tsx       # Landing section with animations
+│   │   ├── About.tsx      # Personal story and skills
+│   │   ├── Projects.tsx   # Project showcase gallery
 │   │   └── SocialSidebar.tsx # Contact links and tooltips
-│   ├── contexts/         # React Context providers
+│   ├── contexts/          # React Context providers
 │   │   └── TranslationContext.tsx # i18n system
-│   ├── assets/           # Component-specific assets
-│   ├── App.tsx           # Main application component
-│   ├── main.tsx          # Application entry point
-│   ├── index.css         # Global styles and animations
-│   └── vite-env.d.ts     # TypeScript environment types
-├── package.json          # Dependencies and scripts
-├── tsconfig.json         # TypeScript configuration
-├── vite.config.ts        # Vite build configuration
-└── README.md            # Project documentation
+│   ├── assets/            # Component-specific assets
+│   ├── App.tsx            # Main application component
+│   ├── main.tsx           # Application entry point
+│   ├── index.css          # Global styles and animations
+│   └── vite-env.d.ts      # TypeScript environment types
+├── package.json           # Dependencies and scripts
+├── tsconfig.json          # TypeScript configuration
+├── vite.config.ts         # Vite build configuration
+└── README.md              # Project documentation
 ```
 
 ## 🌐 Translation System
@@ -258,7 +258,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **GitHub**: [@YourUsername](https://github.com/yourusername)
+- **GitHub**: [@JohnRuscica](https://github.com/JohnRuscica)
 - **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - **Portfolio**: [Your Portfolio](https://yourportfolio.com)
 
