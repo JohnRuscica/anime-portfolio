@@ -1,5 +1,9 @@
 # 🌟 Anime Portfolio - Cyberpunk Edition
 
+**🚀 LIVE PORTFOLIO:** [View Live Site](https://my-portfolio-3ldutkj7d-john-ruscicas-projects.vercel.app)
+
+**📂 GITHUB REPOSITORY:** [Source Code](https://github.com/JohnRuscica/anime-portfolio)
+
 A modern, responsive portfolio website with a cyberpunk aesthetic and comprehensive multi-language support. Built with React, TypeScript, and Vite for optimal performance and developer experience.
 
 ![Portfolio Preview](https://via.placeholder.com/800x400/0a0f1c/00d4ff?text=Anime+Portfolio+Preview)
