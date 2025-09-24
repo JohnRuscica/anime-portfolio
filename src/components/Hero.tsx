@@ -1,3 +1,5 @@
+
+// This component is fully internationalized. All user-facing text is rendered using the translation system via useTranslation().
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from '../contexts/TranslationContext';
 

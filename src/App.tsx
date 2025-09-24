@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { TranslationProvider } from './contexts/TranslationContext'
 import Navbar from './components/Navbar'
 import SocialSidebar from './components/SocialSidebar'
@@ -30,6 +30,7 @@ function App() {
   // State to control the visibility of contact tooltips
   // Triggered when user clicks the Hero section contact button
   const [showTooltip, setShowTooltip] = useState(false);
+  const mobileFooterRef = useRef(null);
 
   /**
    * CYBERPUNK BACKGROUND EFFECT
@@ -53,49 +54,37 @@ function App() {
   const dots = generateDots();
 
   return (
-    <TranslationProvider> {/* Wraps entire app to provide translation context */}
-      {/* FIXED NAVIGATION BAR - Stays at top across all sections */}
+    <TranslationProvider>
       <Navbar />
-      
-      {/* SOCIAL SIDEBAR - Fixed position with contact links and tooltip */}
       <SocialSidebar showTooltip={showTooltip} />
-      
-      {/* CYBERPUNK BACKGROUND EFFECTS - Animated visual elements */}
       <div className="cyber-background">
-        {/* Animated Grid Pattern - Creates the "digital matrix" effect */}
         <div className="grid-pattern"></div>
-        
-        {/* Floating Dots Animation - Randomly positioned glowing particles */}
         <div className="floating-dots">
           {dots.map(dot => (
             <div
-              key={dot.id}                      // Unique key for React rendering
+              key={dot.id}
               className="dot"
               style={{
-                left: `${dot.left}%`,           // CSS custom property for position
-                top: `${dot.top}%`,             // CSS custom property for position
-                animationDelay: `${dot.delay}s`, // Stagger animation timing
+                left: `${dot.left}%`,
+                top: `${dot.top}%`,
+                animationDelay: `${dot.delay}s`,
               }}
             />
           ))}
         </div>
       </div>
-
-      {/* MAIN CONTENT SECTIONS - Vertically stacked page sections */}
-      
-      {/* HERO SECTION - Landing area with introduction and contact CTA */}
       <Hero onContactClick={() => {
-        setShowTooltip(true);                    // Show contact tooltip
-        setTimeout(() => setShowTooltip(false), 5000); // Hide after 5 seconds
+        // Show tooltip
+        setShowTooltip(true);
+        setTimeout(() => setShowTooltip(false), 5000);
+        // On mobile, scroll to footer
+        if (window.innerWidth <= 768 && mobileFooterRef.current) {
+          (mobileFooterRef.current as HTMLElement).scrollIntoView({ behavior: 'smooth' });
+        }
       }} />
-      
-      {/* ABOUT SECTION - Personal background, skills, and fun facts */}
       <About />
-      
-      {/* PROJECTS SECTION - Portfolio showcase with filtering */}
       <Projects />
-      {/* Mobile Footer for social links */}
-      <MobileFooter />
+      <MobileFooter ref={mobileFooterRef} showTooltip={showTooltip} />
     </TranslationProvider>
   )
 }

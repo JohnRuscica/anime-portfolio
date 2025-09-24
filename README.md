@@ -12,8 +12,9 @@ A modern, responsive portfolio website with a cyberpunk aesthetic and comprehens
 
 ## ✨ Features
 
+
 ### 🌐 **Multi-Language Support**
-- **8+ Languages**: English, Japanese, Spanish, French, Korean, German, Italian, Portuguese
+- **6 Languages**: English, French, German, Italian, Spanish, Korean
 - **Real-time Translation**: Instant language switching without page reload
 - **Comprehensive Coverage**: All UI text, project descriptions, and content translated
 - **Fallback System**: Graceful degradation to English for missing translations

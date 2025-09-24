@@ -226,7 +226,7 @@ const Projects = () => {
             className="view-more-btn"
           >
             <span>🔗</span>
-            {t('projects.view-more')}
+            {t('hero.viewProjects')}
             <span className="btn-arrow">→</span>
           </a>
         </div>

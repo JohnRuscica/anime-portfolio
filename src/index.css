@@ -1605,3 +1605,44 @@ body {
   }
 }
 
+/* Mobile Footer Tooltip */
+.footer-tooltip {
+  position: absolute;
+  left: 30%;
+  bottom: 60px;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #282c33, #383e47);
+  color: #00D9FF;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 16px 0 rgba(0,217,255,0.18), 0 0 15px #00D9FF44;
+  border: 2px solid #00D9FF;
+  z-index: 100;
+  animation: tooltipFloat 3s ease-in-out infinite, tooltipGlow 2s ease-in-out infinite alternate;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-tooltip-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00D9FF;
+  margin-left: 8px;
+  margin-bottom: -6px;
+  animation: tooltipPulse 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px #00D9FF99);
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) scale(0.9); }
+  10% { opacity: 1; transform: translateX(-50%) scale(1); }
+  90% { opacity: 1; transform: translateX(-50%) scale(1); }
+  100% { opacity: 0; transform: translateX(-50%) scale(0.9); }
+}
+

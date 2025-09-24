@@ -1,7 +1,12 @@
-import React from 'react';
 
-const MobileFooter: React.FC = () => (
-  <footer className="mobile-footer">
+import { forwardRef } from 'react';
+
+interface MobileFooterProps {
+  showTooltip?: boolean;
+}
+
+const MobileFooter = forwardRef<HTMLElement, MobileFooterProps>(({ showTooltip }, ref) => (
+  <footer className="mobile-footer" ref={ref}>
     <a
       href="https://github.com/JohnRuscica"
       className="footer-link"
@@ -39,7 +44,13 @@ const MobileFooter: React.FC = () => (
         />
       </svg>
     </a>
+    {showTooltip && (
+      <div className="footer-tooltip">
+        Contact me here! 👇
+        <span className="footer-tooltip-arrow" />
+      </div>
+    )}
   </footer>
-);
+));
 
 export default MobileFooter;
