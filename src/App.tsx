@@ -5,6 +5,7 @@ import SocialSidebar from './components/SocialSidebar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
+import MobileFooter from './components/MobileFooter'
 
 /**
  * MAIN APPLICATION COMPONENT
@@ -93,6 +94,8 @@ function App() {
       
       {/* PROJECTS SECTION - Portfolio showcase with filtering */}
       <Projects />
+      {/* Mobile Footer for social links */}
+      <MobileFooter />
     </TranslationProvider>
   )
 }
