@@ -955,46 +955,111 @@ body {
 
 /* Scroll Animation Base Styles */
 .scroll-animate {
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(60px);
   opacity: 0;
+  filter: blur(5px);
 }
 
 .scroll-animate.animate-in {
   transform: translateY(0);
   opacity: 1;
+  filter: blur(0px);
 }
 
 .scroll-animate.animate-out {
-  transform: translateY(50px);
+  transform: translateY(60px);
   opacity: 0;
+  filter: blur(3px);
 }
 
-/* Staggered Animation Delays */
+/* Staggered Animation Delays with Unique Effects */
 .about-header.scroll-animate {
-  transition-delay: 0.1s;
+  transition-delay: 0s;
+  transition-duration: 1s;
 }
 
 .story-card.scroll-animate {
-  transition-delay: 0.2s;
+  transition-delay: 0.15s;
+  transition-duration: 0.9s;
 }
 
 .fun-facts.scroll-animate {
   transition-delay: 0.3s;
+  transition-duration: 0.8s;
 }
 
 .skills-card.scroll-animate {
-  transition-delay: 0.4s;
+  transition-delay: 0.45s;
+  transition-duration: 0.9s;
 }
 
 .learning-card.scroll-animate {
-  transition-delay: 0.5s;
+  transition-delay: 0.6s;
+  transition-duration: 0.8s;
 }
 
-/* Enhanced Animation Variants */
+/* Enhanced Animation Variants - Dynamic Exit Effects */
 .about-header.scroll-animate.animate-out {
-  transform: translateY(-30px);
+  transform: translateY(-40px) scale(0.95);
   opacity: 0;
+  filter: blur(8px);
+}
+
+/* Story Card - Slide in from left with fade and slight rotation */
+.story-card.scroll-animate.animate-in {
+  transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.story-card.scroll-animate.animate-out {
+  transform: translateX(-100px) translateY(50px) rotate(-3deg) scale(0.85);
+  opacity: 0;
+  filter: blur(8px);
+}
+
+/* Fun Facts - Bounce effect with rotation */
+.fun-facts.scroll-animate.animate-in {
+  transform: translateY(0) rotate(0deg) scale(1);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fun-facts.scroll-animate.animate-out {
+  transform: translateX(-80px) translateY(60px) scale(0.8) rotate(-5deg);
+  opacity: 0;
+  filter: blur(10px);
+}
+
+/* Skills Card - Slide in from right with tech-like precision */
+.skills-card.scroll-animate.animate-in {
+  transform: translateX(0) translateY(0) scale(1);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.skills-card.scroll-animate.animate-out {
+  transform: translateX(100px) translateY(50px) scale(0.85);
+  opacity: 0;
+  filter: blur(8px);
+}
+
+/* Learning Card - Gentle float effect */
+.learning-card.scroll-animate.animate-in {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.learning-card.scroll-animate.animate-out {
+  transform: translateY(80px) scale(0.75);
+  opacity: 0;
+  filter: blur(12px);
 }
 
 /* === ABOUT SECTION LAYOUT & CONTAINERS === */
@@ -1023,7 +1088,7 @@ body {
 .about-content {
   display: flex;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
@@ -1041,21 +1106,6 @@ body {
   }
 }
 
-.story-card.scroll-animate.animate-out {
-  transform: translateX(-50px) translateY(30px);
-  opacity: 0;
-}
-
-.fun-facts.scroll-animate.animate-out {
-  transform: translateX(-50px) translateY(30px) scale(0.95);
-  opacity: 0;
-}
-
-.skills-card.scroll-animate.animate-out {
-  transform: translateX(50px) translateY(30px);
-  opacity: 0;
-}
-
 /* === ABOUT SECTION CARDS & CYBERPUNK EFFECTS === */
 .story-card, .fun-facts, .skills-card, .learning-card {
   background: rgba(20, 20, 30, 0.7);
@@ -1065,12 +1115,39 @@ body {
   backdrop-filter: blur(8px);
   padding: 2rem 2rem 1.5rem 2rem;
   margin-bottom: 1.5rem;
-  transition: box-shadow 0.3s, border 0.3s;
+  transition: all 0.4s ease, box-shadow 0.3s, border 0.3s, transform 0.3s;
+  position: relative;
+}
+
+/* Enhanced hover effects for animated cards */
+.story-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 32px 0 rgba(0,217,255,0.2), 0 0 0 2px #00d9ff66;
+  border-color: #00d9ff66;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 32px 0 rgba(0,217,255,0.2), 0 0 0 2px #00d9ff66;
+  border-color: #00d9ff66;
+}
+
+.learning-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 32px 0 rgba(139,92,246,0.2), 0 0 0 2px #8b5cf666;
+  border-color: #8b5cf666;
 }
 
 .fun-facts {
   border: 1.5px solid #ff008033;
   box-shadow: 0 2px 24px 0 rgba(255,0,128,0.12), 0 0 0 1.5px #ff008033;
+  transition: all 0.4s ease, box-shadow 0.3s, border 0.3s, transform 0.3s;
+}
+
+.fun-facts:hover {
+  transform: translateY(-5px) scale(1.02) rotate(1deg);
+  box-shadow: 0 8px 32px 0 rgba(255,0,128,0.25), 0 0 0 2px #ff008066;
+  border-color: #ff008066;
 }
 
 .story-card h3, .fun-facts h3, .skills-card h3, .learning-card h3 {
